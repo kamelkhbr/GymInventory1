@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="42dp"
+    app:cardElevation="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/gym_icon"
+            android:layout_width="70dp"
+            android:layout_height="56dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_gymicon1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/equip_name"
+            style="@style/equipement_font"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Gym Equipement"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/gym_icon"
+            app:layout_constraintStart_toEndOf="@id/gym_icon"
+            app:layout_constraintTop_toTopOf="@id/gym_icon"
+            />
+        <TextView
+            android:id="@+id/equip_price_textview"
+            style="@style/price_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/gym_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/equip_name"
+            tools:text="1200.00"
+            />
+        
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

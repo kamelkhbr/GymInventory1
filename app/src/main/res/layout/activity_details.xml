@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailsActivity">
+
+    <TextView
+        android:id="@+id/name_equip_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Equipement name"
+        style="@style/equipement_font"
+        />
+    <Button
+        android:id="@+id/purchase_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="32dp"
+        android:text="Purchase Item"
+        />
+
+
+
+    <TextView
+        android:id="@+id/item_descrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        app:layout_constraintTop_toTopOf="@+id/name_equip_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Item description"
+        style="@style/equipement_font"
+        />
+    <TextView
+        android:id="@+id/price_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        app:layout_constraintTop_toTopOf="@id/item_descrp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Item price"
+        style="@style/price_font"
+        />
+
+    <View
+        android:id="@+id/middle_view"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="360dp"
+        android:background="#44444E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_descrp"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <EditText
+        android:id="@+id/num_items"
+        android:layout_width="52dp"
+        android:layout_height="39dp"
+        android:layout_margin="32dp"
+        android:hint="  "
+        android:numeric="integer"
+        app:layout_constraintBottom_toTopOf="@+id/purchase_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.699"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/equipement_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Number of Items:"
+        app:layout_constraintBottom_toTopOf="@+id/purchase_button"
+        app:layout_constraintEnd_toStartOf="@+id/num_items"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Item Inventory: "
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middle_view"
+        app:layout_constraintVertical_bias="0.229" />
+
+    <TextView
+        android:id="@+id/owned_view"
+        android:layout_width="44dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/purchase_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middle_view"
+        app:layout_constraintVertical_bias="0.201" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
